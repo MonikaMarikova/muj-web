@@ -1,3 +1,3 @@
 # Můj web
 ---
-MVC web
+Responzivní MVC web 
