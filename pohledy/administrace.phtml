@@ -1,0 +1,13 @@
+<div class="centrovac">
+
+<p>Vítejte v administraci... Jste přihlášeni jako <strong><?= $jmeno ?></strong>.</p>
+
+<?php if (!$admin) : ?>
+    <p>Nemáte administrátorská oprávnění, požádejte administrátora webu, aby vám je přidělil.</p>
+<?php endif ?>
+
+<p class="administrace"><a href="editor">Editor článků</a></p>
+<p class="administrace"><a href="clanek">Seznam článků</a></p>
+<p class="administrace"><a href="administrace/odhlasit">Odhlásit</a></p>
+
+</div>

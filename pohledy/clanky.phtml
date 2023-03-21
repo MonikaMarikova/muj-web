@@ -1,0 +1,16 @@
+<section>
+    <ul>
+        <?php foreach ($clanky as $clanek) : ?>
+            <li>
+                <h2><a href="clanek/<?= $clanek['url'] ?>"><?= $clanek['titulek'] ?></a></h2>
+
+                <p> <?= $clanek['popisek'] ?> <span class="mensi">Vydáno: <?= $clanek['datum_pridani'] ?></span></p>
+                <?php if ($admin) : ?>
+                    <a href="editor/<?= $clanek['url'] ?>">Editovat</a>
+                    <a href="clanek/<?= $clanek['url'] ?>/odstranit">Odstranit</a>
+                <?php endif ?>
+
+            </li>
+        <?php endforeach ?>
+    </ul>
+</section>

@@ -1,0 +1,340 @@
+body {
+    padding: 2rem;
+    /**color: #b6f7e9;
+    background: -moz-linear-gradient(#257a6c, #0d5045, #073a31);*/
+    color:#a2b1d3;
+    background: linear-gradient(#2f2649, #110e11);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.9rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body>header {
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header>h1 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 8rem;
+    color: #a2b1d3;
+}
+
+footer {
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 4rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer a {
+    text-decoration: none;
+    color: #a2b1d3;
+}
+
+article h1, h2 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    font-variant: small-caps;
+    letter-spacing: 0.2rem;
+    color: #a2b1d3;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 3rem;
+}
+
+nav.menu {
+    margin-left: 1.5rem;
+    display: block;
+}
+
+nav.menu ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav.menu ul li {
+    width: 100%;
+    font-variant: small-caps;
+}
+
+nav.menu a {
+    font-size: 3rem;
+    display: block;
+    color: #a2b1d3;
+    text-decoration: none;
+    line-height: 7rem;
+    padding: 0 15px;
+    width: 100%;
+}
+
+nav.menu a:hover {
+    color: #c3e9f7;
+    text-decoration:underline;
+}
+
+article {
+    line-height: 4.5rem;
+    padding: 0 1.5rem;
+    flex-grow: 1;
+}
+
+article a {
+    color: #c3e9f7;
+}
+
+article a:hover {
+    color: #c3e9f7;
+    text-decoration: underline;
+}
+
+
+/*aby obrázek nepřetekl*/
+img {
+    max-width: 100%;
+    /*100% šířky rodičovského elementu*/
+    height: auto;
+    /*automatický dopočet, aby se zachoval poměr stran*/
+}
+
+ul {
+    list-style-type: none;
+}
+
+li h2 {
+    padding-bottom: 0;
+}
+
+li p {
+    padding: 0 2rem;
+}
+
+li a {
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+article li {
+    padding-bottom: 4rem;
+}
+
+.formular {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    column-gap: 0.5em;
+}
+
+.prihlaseni {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    column-gap: 0.5em;
+}
+
+
+.administrace{
+    margin: 3rem 2rem;
+}
+
+.administrace a{
+    text-decoration: none;
+    background: #b74385c2;
+    color: #161e1c;    
+    padding: 0.5rem 3rem;
+    border-radius: 3rem;
+}
+
+.administrace a:hover{
+    background: #c25f97e0;
+    color: white;
+    text-decoration: none;
+}
+
+.seznam li{
+    padding: 0;
+}
+
+label {
+    text-align: right;
+    margin-right: 0.9em;    
+}
+
+input[type="submit"] {
+    font-size: 2.5rem;    
+    border: 0px;
+    display: block;
+    margin: 3.5rem auto 0 auto;
+    font-weight: 500;
+    text-decoration: none;
+    background: #b74385c2;
+    color: #161e1c;    
+    padding: 0.5rem 3rem;
+    border-radius: 3rem;
+}
+
+input[type="submit"]:hover {
+    background: #c25f97e0;
+    color: white;
+    
+}
+
+input[type="text"], input[type="password"] {
+    width: 15rem;
+    border-radius: 1rem;
+    border: 1px solid #c3e9f7;
+    padding: 0.3em;
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+}
+
+.centrovac {
+    text-align: center;
+}
+
+.mensi {
+    font-size: 75%;
+    color: #788299;
+}
+
+.mensi a{
+    text-decoration: none;
+    font-style: italic;
+    color: #a2b1d3;
+}
+
+.zprava {
+    text-align: center;
+    background: #b74385c2;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    line-height: 4.5rem;
+    font-size: 2.5rem;
+}
+@media (min-width: 992px) {
+    body > header ul > li{        
+        height: 5rem;
+        color: white;
+        display: inline-block;
+    }
+
+    body article{
+        font-size: 1.5rem;
+    }
+
+    article h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    article {
+        line-height: 2.5rem;
+    }
+
+    footer{
+        font-size: 1.5rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1.5rem; 
+        border-radius: 3rem;
+    }
+        
+    input[type="text"], input[type="password"] {
+        border-radius: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    
+}
+
+@media (min-width: 1250px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    body article{
+        font-size: 1.5rem;
+    }
+
+    footer{
+        font-size: 1.5rem;
+    }
+
+    body > header {        
+        height: 5rem;
+        width: 100%;
+        color:#110e11;
+    background: linear-gradient(#c0cae2, #a2b1d3);
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        font-size: 1rem;
+    }
+
+    body > header > h1{
+        font-size: 2.7rem;
+        margin-top: 0;
+        line-height: 5rem;
+        color: #110e11;
+    }
+
+    nav.menu ul {
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    
+    nav.menu ul li{
+        padding: 0 25px;
+        margin: 0 5px;
+        font-size: 1em;
+        line-height: 4.3em;
+    }
+    
+    nav.menu a {
+        line-height: 4rem;
+        padding: 8px 0;
+        font-size: 2rem;        
+        color: #110e11;
+    }
+    
+    article {
+        max-width: 1000px;
+        margin: 5rem auto;
+    }
+
+    article h1,
+    h2 {
+        color: #c0cae2;
+        text-shadow: none;
+    }
+
+    nav.menu {
+        margin-left: 0;
+    }
+
+    .prihlaseni {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        column-gap: 0.5em;
+    }
+
+    .zprava {
+        margin-top: 5rem;
+        margin-bottom: 0;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+
+}
